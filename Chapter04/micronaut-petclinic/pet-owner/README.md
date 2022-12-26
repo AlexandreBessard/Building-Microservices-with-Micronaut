@@ -15,5 +15,5 @@
 - [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
 
 
-//Command to get a Cookie session:
+//Command to get a Cookie session from Linux:
 curl -X POST -H "Content-Type: application/json" -d '{"username": "alice", "password": "alice@1"}' http://localhost:8081/login
