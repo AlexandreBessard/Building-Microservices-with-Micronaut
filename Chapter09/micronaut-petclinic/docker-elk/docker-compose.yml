@@ -3,7 +3,7 @@ version: '3.2'
 services:
 
   elasticsearch:
-    image: elasticsearch:$ELK_VERSION
+    image: elasticsearch:${ELK_VERSION}
     volumes:
       - elasticsearch:/usr/share/elasticsearch/data
     environment:
@@ -28,7 +28,7 @@ services:
 
   # https://www.elastic.co/guide/en/logstash/current/docker-config.html
   logstash:
-    image: logstash:$ELK_VERSION
+    image: logstash:${ELK_VERSION}
     ports:
       - "5000:5000"
       - "9600:9600"
